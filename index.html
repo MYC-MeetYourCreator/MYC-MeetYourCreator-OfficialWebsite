@@ -10,71 +10,77 @@ body {
 font-family: Arial, sans-serif;
 margin: 0;
 padding: 0;
+background-color: #f0fff0;
 line-height: 1.6;
-background-color: #f0fff0; /* light green background */
+scroll-behavior: smooth; /* smooth scrolling */
 }
 
 /* Header */
 header {
-background-color: green; /* green header */
-color: yellow; /* yellow text */
-padding: 20px 0;
+background-color: green;
+color: yellow;
+padding: 80px 0;
+font-size: 60px;
+font-weight: bold;
 text-align: center;
 }
 
 /* Navigation bar */
 nav {
-background-color: yellow; /* yellow nav background */
+background-color: yellow;
 display: flex;
 justify-content: center;
+position: sticky; /* stays at the top */
+top: 0;
+z-index: 1000;
 }
 
 nav a {
-color: green; /* green link text */
-padding: 14px 20px;
+color: green;
 text-decoration: none;
+padding: 20px 30px;
+font-size: 20px;
 font-weight: bold;
 }
 
 nav a:hover {
-background-color: lightgreen; /* hover effect */
+background-color: lightgreen;
 }
 
-/* Content sections */
+/* Sections */
 section {
-padding: 20px;
 max-width: 800px;
-margin: 20px auto;
-background-color: #ffffff; /* white content background */
+margin: 40px auto;
+padding: 20px;
+background-color: white;
 border-radius: 5px;
 box-shadow: 0 0 5px rgba(0,0,0,0.1);
+text-align: left;
 }
 
 section h2 {
-color: green; /* section headings green */
+color: green;
+font-size: 30px;
 }
 
 section p {
-color: #333; /* paragraph text dark gray for readability */
+color: #333;
+font-size: 18px;
 }
 
 /* Footer */
 footer {
 text-align: center;
 padding: 10px;
-background-color: green; /* green footer */
-color: yellow; /* yellow text */
-position: fixed;
-bottom: 0;
-width: 100%;
+background-color: green;
+color: yellow;
+margin-top: 40px;
 }
 </style>
 </head>
 <body>
 
-<header>
-<h1>Welcome to MYC (Meet Your Creator)</h1>
-</header>
+<header>WELCOME TO MYC</header>
 
 <nav>
 <a href="#home">Home</a>
@@ -84,19 +90,27 @@ width: 100%;
 
 <section id="home">
 <h2>Home</h2>
-<p>This is the homepage of your website. Add your content here!</p>
+<p>Welcome to MYC (Meet Your Creator)! This platform allows creators to connect with their audience, share projects, and receive feedback. Use the navigation menu above to explore more about us.</p>
 </section>
 
 <section id="about">
 <h2>About</h2>
-<p>Το MYC είναι το απόλυτο κοινωνικό δίκτυο για sponsors και content creators. Με την είσοδο σου στο δίκτυο του MYC
- τα certified brands που βρίσκονται στο app μας θα μπορούν να σε προσεγγιζουν μέσω των direct messages του MYC, σύμφωνα με τα κριτήρια που τα ίδια τα brands έχουν. 
- Συνέδεσε τώρα το account σου στη πλατφόρμα επιλογήσ σου, μοιράσου με τουσ χορηγούσ μασ τα στατιστικά σου και βρές το επόμενο σου brand deal στο MYC.  </p>
+<p>MYC is an interactive platform where creators can:</p>
+<ul>
+<li>Share projects and content easily</li>
+<li>Connect with their audience</li>
+<li>Receive feedback and suggestions</li>
+</ul>
+<p>Our goal is to make content creation <strong>simple</strong> and <strong>fun</strong> for everyone.</p>
 </section>
 
 <section id="contact">
 <h2>Contact</h2>
-<p>Provide your contact details or a contact form here.</p>
+<p>Get in touch with us!</p>
+<ul>
+<li>Email: contact@myc.com</li>
+<li>Phone: +1-555-123-4567</li>
+</ul>
 </section>
 
 <footer>
